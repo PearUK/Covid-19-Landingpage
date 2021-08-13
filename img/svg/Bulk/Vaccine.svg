@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="24px" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g id="syringe-medical-coronavirus-covid19-drug" style="" transform="matrix(0.545455, 0, 0, 0.428571, -4.909095, -1.714284)" bx:origin="-0.003466 -0.004214">
+    <path d="m9 36h22v-1a5 5 0 0 0 -5-5 2.006 2.006 0 0 1 -2-2v-2h-8v2a2.006 2.006 0 0 1 -2 2 5 5 0 0 0 -5 5z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m25 20h-10a1 1 0 0 0 -1 1v3h12v-3a1 1 0 0 0 -1-1z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m19 47v3h2v-3h3v-2h-3v-3h-2v3h-3v2z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m9 59a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1v-3h-22z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m9 54h22v-16h-22zm5-10a1 1 0 0 1 1-1h2v-2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2h2a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-2v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1-1v-2h-2a1 1 0 0 1 -1-1z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m39 17v29h12v-6h-5a1 1 0 0 1 0-2h5v-2h-3a1 1 0 0 1 0-2h3v-2h-5a1 1 0 0 1 0-2h5v-2h-3a1 1 0 0 1 0-2h3v-2h-5a1 1 0 0 1 0-2h5v-2h-3a1 1 0 0 1 0-2h3v-1a1 1 0 0 0 -1-1h-10a1 1 0 0 0 -1 1z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m40 60h10a1 1 0 0 0 0-2h-10a1 1 0 0 0 0 2z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m37 49a1 1 0 0 0 1 1h14a1 1 0 0 0 0-2h-14a1 1 0 0 0 -1 1z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m43 52h4v4h-4z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+    <path d="m46 12v-7a1 1 0 0 0 -2 0v7a1 1 0 0 0 -1 1v1h4v-1a1 1 0 0 0 -1-1z" style="fill-rule: evenodd; fill: rgb(255, 255, 255);"/>
+  </g>
+</svg>
