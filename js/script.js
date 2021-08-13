@@ -529,7 +529,7 @@ function toggle1(){
   video_watch.classList.toggle("active1")
   video1.pause();
   video1.currentTime = 0;
-}
+};
 
 function toggle2(){
   var video_watch2 = document.querySelector(".video_watch2")
@@ -537,7 +537,7 @@ function toggle2(){
   video_watch2.classList.toggle("active2")
   video2.pause();
   video2.currentTime = 0;
-}
+};
 
 function toggle3(){
   var video_watch3 = document.querySelector(".video_watch3")
@@ -545,4 +545,20 @@ function toggle3(){
   video_watch3.classList.toggle("active3")
   video3.pause();
   video3.currentTime = 0;
-}
+};
+
+function toggle4(){
+  var video_watch4 = document.querySelector(".video_watch4")
+  var video4 = document.querySelector(".video4")
+  video_watch4.classList.toggle("active4")
+  video4.pause();
+  video4.currentTime = 0;
+};
+
+function toggle5(){
+  var video_watch5 = document.querySelector(".video_watch5")
+  var video5 = document.querySelector(".video5")
+  video_watch5.classList.toggle("active5")
+  video5.pause();
+  video5.currentTime = 0;
+};
