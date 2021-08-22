@@ -57,48 +57,48 @@ getCovidVn_death();
 getCovidVn_active();
 
 function getCovidVn_case(){
-	fetch('https://api.zingnews.vn/public/v2/corona/getChart?type=stats')
+	fetch('https://api-kent.netlify.app/.netlify/functions/api/vn')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let nguoinhiem = data.data.all.total;
+		let nguoinhiem = +data.total.totalCases;
 		document.getElementById("case_vn").innerHTML = nguoinhiem.toLocaleString("en");
 
 	});
 }
 
 function getCovidVn_recovered(){
-	fetch('https://api.zingnews.vn/public/v2/corona/getChart?type=stats')
+	fetch('https://api-kent.netlify.app/.netlify/functions/api/vn')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let phuchoi = data.data.all.recover;
+		let phuchoi = +data.total.totalRecovered;
 		document.getElementById("recovered_vn").innerHTML = phuchoi.toLocaleString("en");
 
 	});
 }
 
 function getCovidVn_death(){
-	fetch('https://api.zingnews.vn/public/v2/corona/getChart?type=stats')
+	fetch('https://api-kent.netlify.app/.netlify/functions/api/vn')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let tuvong = data.data.all.death;
+		let tuvong = +data.total.totalDeaths;
 		document.getElementById("death_vn").innerHTML = tuvong.toLocaleString("en");
 
 	});
 }
 
 function getCovidVn_active(){
-	fetch('https://api.zingnews.vn/public/v2/corona/getChart?type=stats')
+	fetch('https://api-kent.netlify.app/.netlify/functions/api/vn')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let dangchua = data.data.all.remain;
+		let dangchua = data.total.totalCases - data.total.totalRecovered - data.total.totalDeaths;
 		document.getElementById("active_vn").innerHTML = dangchua.toLocaleString("en");
 
 	});
