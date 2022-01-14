@@ -4,48 +4,48 @@ getCovidWorld_death();
 getCovidWorld_active();
 
 function getCovidWorld_case(){
-	fetch('https://api-kent.netlify.app/.netlify/functions/api/global/all')
+	fetch('https://static.pipezero.com/covid/data.json')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let nguoinhiem = data.cases;
+		let nguoinhiem = data.total.world.cases;
 		document.getElementById("case_world").innerHTML = nguoinhiem.toLocaleString("en");
 
 	});
 }
 
 function getCovidWorld_recovered(){
-	fetch('https://api-kent.netlify.app/.netlify/functions/api/global/all')
+	fetch('https://static.pipezero.com/covid/data.json')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let phuchoi = data.recovered;
+		let phuchoi = data.total.world.recovered;
 		document.getElementById("recovered_world").innerHTML = phuchoi.toLocaleString("en");
 
 	});
 }
 
 function getCovidWorld_death(){
-	fetch('https://api-kent.netlify.app/.netlify/functions/api/global/all')
+	fetch('https://static.pipezero.com/covid/data.json')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let tuvong = data.deaths;
+		let tuvong = data.total.world.death;
 		document.getElementById("death_world").innerHTML = tuvong.toLocaleString("en");
 
 	});
 }
 
 function getCovidWorld_active(){
-	fetch('https://api-kent.netlify.app/.netlify/functions/api/global/all')
+	fetch('https://static.pipezero.com/covid/data.json')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let dangchua = data.active;
+		let dangchua = data.total.world.treating;
 		document.getElementById("active_world").innerHTML = dangchua.toLocaleString("en");
 
 	});
@@ -57,48 +57,48 @@ getCovidVn_death();
 getCovidVn_active();
 
 function getCovidVn_case(){
-	fetch('https://api-kent.netlify.app/.netlify/functions/api/vn')
+	fetch('https://static.pipezero.com/covid/data.json')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let nguoinhiem = +data.total.totalCases;
+		let nguoinhiem = data.total.internal.cases;
 		document.getElementById("case_vn").innerHTML = nguoinhiem.toLocaleString("en");
 
 	});
 }
 
 function getCovidVn_recovered(){
-	fetch('https://api-kent.netlify.app/.netlify/functions/api/vn')
+	fetch('https://static.pipezero.com/covid/data.json')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let phuchoi = +data.total.totalRecovered;
+		let phuchoi = data.total.internal.recovered;
 		document.getElementById("recovered_vn").innerHTML = phuchoi.toLocaleString("en");
 
 	});
 }
 
 function getCovidVn_death(){
-	fetch('https://api-kent.netlify.app/.netlify/functions/api/vn')
+	fetch('https://static.pipezero.com/covid/data.json')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let tuvong = +data.total.totalDeaths;
+		let tuvong = data.total.internal.death;
 		document.getElementById("death_vn").innerHTML = tuvong.toLocaleString("en");
 
 	});
 }
 
 function getCovidVn_active(){
-	fetch('https://api-kent.netlify.app/.netlify/functions/api/vn')
+	fetch('https://static.pipezero.com/covid/data.json')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
 
-		let dangchua = data.total.totalCases - data.total.totalRecovered - data.total.totalDeaths;
+		let dangchua = data.total.internal.treating;
 		document.getElementById("active_vn").innerHTML = dangchua.toLocaleString("en");
 
 	});
