@@ -98,7 +98,7 @@ function getCovidVn_active(){
 	.then(data => {
 		console.log(data);
 
-		let dangchua = data.total.internal.cases - tuvong - phuchoi;
+		let dangchua = data.total.internal.cases - data.total.internal.death - data.total.internal.recovered;
 		document.getElementById("active_vn").innerHTML = dangchua.toLocaleString("en");
 
 	});
